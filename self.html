@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="self.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="search">
+                <input type="text" id="city-input" placeholder="Enter City Name" spellcheck="false">
+                <button onclick="searchWeather()"><img src="images/search.png" alt="Search"></button>
+            </div>
+            <div class="spinner" id="spinner"></div>
+            <div class="weather" id="weather">
+                <h1 class="temp" id="temp">_ _°C</h1>
+                <h2 class="city" id="city-name">CITY NAME</h2>
+                <img id="weather-icon" class="weather-icon" alt="Weather Icon">
+                <p id="weather-description">Description</p>
+                <div class="details">
+                    <div class="details1">
+                        <div class="col">
+                            <img src="images/humidity.png" alt="Humidity">
+                        </div>
+                        <div class="H">
+                            <p class="Humidity" id="humidity">_ _%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="details2">
+                        <div class="col">
+                            <img src="images/wind.png" alt="Wind Speed">
+                        </div>
+                        <div class="W">
+                            <p class="Wind" id="wind-speed">_ _ Km/h</p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+                <p id="pressure">Pressure: _ _ hPa</p>
+                <p id="sunrise">Sunrise: _ _</p>
+                <p id="sunset">Sunset: _ _</p>
+            </div>
+            <p class="error" id="error">City not found. Please try again.</p>
+        </div>
+    </div>
+    <script src="self.js"></script>
+</body>
+</html>

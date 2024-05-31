@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0527bbc1-d407-4015-8e54-51bb78fbd17c/d4gkwo0-b1b3bd82-3a99-4587-a768-0a9ccf67eb77.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA1MjdiYmMxLWQ0MDctNDAxNS04ZTU0LTUxYmI3OGZiZDE3Y1wvZDRna3dvMC1iMWIzYmQ4Mi0zYTk5LTQ1ODctYTc2OC0wYTljY2Y2N2ViNzcuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Mdb1Hqpg5NvyrNL6vAOD6tMtYqMS4XAO4QX4TOdxto4') no-repeat center center fixed;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background 0.5s ease;
+}
+
+body.clear {
+    background: url('https://media1.tenor.com/m/gznLWsJjaMAAAAAC/daytime-miving.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.clouds {
+    background: url('https://cdn.pixabay.com/animation/2023/03/05/12/05/12-05-54-62_512.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.rain {
+    background: url('https://cdn.pixabay.com/animation/2023/03/05/12/05/12-05-54-62_512.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.drizzle {
+    background: url('https://media1.tenor.com/m/AeaXKKx8CgQAAAAC/rain-droplets.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.thunderstorm {
+    background: url('https://cdn.pixabay.com/animation/2023/02/15/02/20/02-20-04-915_512.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.snow {
+    background: url('https://cdn.pixabay.com/animation/2023/02/15/02/31/02-31-39-143_512.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.mist, body.haze, body.fog {
+    background: url('https://gifdb.com/images/high/tropical-island-shore-rising-mist-nwfgwyzy8zroi5pk.webp') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.smoke, body.dust, body.sand {
+    background: url('https://media1.tenor.com/m/R1wT41nNEnAAAAAC/sandstorm-sand.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.ash {
+    background: url('https://media1.tenor.com/m/RgKmn7I0gp8AAAAAC/ash-volcano.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.squall {
+    background: url('https://media1.tenor.com/m/8G5TgDyy2yAAAAAC/storm-tornado.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.tornado {
+    background: url('https://media1.tenor.com/m/nIuL3uF2Sm0AAAAAC/tornado-twister.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.card {
+    background: rgba(6, 101, 216, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    width: 500px;
+    height: auto;
+    color: #fff;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search button {
+    background: #e1bfdb;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 20px;
+}
+
+.spinner {
+    display: none;
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top-color: #3498db;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.weather {
+    display: none;
+}
+
+.temp {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.city {
+    font-size: 24px;
+    color: #fbf6f6;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.details1, .details2 {
+    display: flex;
+    align-items: center;
+}
+
+.details .col img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.Humidity, .Wind {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    display: none;
+    margin-top: 10px;
+}
+
+.weather-icon {
+    display: none;
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+}
